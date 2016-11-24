@@ -4,6 +4,7 @@ package com.lyz.dao;
 public class Item {
     private int id;
     private String title;
+    private String type;
     private String url;
     private String content;
     private String time;
@@ -15,6 +16,14 @@ public class Item {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getTitle() {

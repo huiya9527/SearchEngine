@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Mapper
 @Component
-public interface SportsMapper {
-    @Select("select id, title, url, content, time, comments_num from sports where id=#{id}")
+public interface NewsMapper {
+    @Select("select id, type, title, url, content, time, comments_num from sports where id=#{id}")
     Item findById(@Param("id")int id);
 }
