@@ -10,6 +10,9 @@ import org.springframework.stereotype.Component;
 @Mapper
 @Component
 public interface NewsMapper {
-    @Select("select id, type, title, url, content, time, comments_num from sports where id=#{id}")
+    @Select("select id, type, title, url, content, time, comments_num from news where id=#{id}")
     Item findById(@Param("id")int id);
+
+    @Select("select max(id)from news")
+    int findMaxId();
 }

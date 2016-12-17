@@ -49,7 +49,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+
+        <!-- https://mvnrepository.com/artifact/com.janeluo/ikanalyzer -->
+        <dependency>
+            <groupId>com.janeluo</groupId>
+            <artifactId>ikanalyzer</artifactId>
+            <version>2012_u6</version>
+        </dependency>
+
+    </dependencies>
 
 	<build>
 		<plugins>
